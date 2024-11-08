@@ -1,0 +1,11 @@
+service : {
+  deposit: (nat) -> (bool);
+  getBalance: () -> (nat) query;
+  getTransactionHistory: (principal) -> (vec record {
+                                               text;
+                                               int;
+                                               int;
+                                             }) query;
+  init: () -> ();
+  withdraw: (nat) -> (bool);
+}
